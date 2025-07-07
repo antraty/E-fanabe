@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlateforme MG - Fandaharam-potoana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tany-fototra">
+    <header class="lohany">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="tsindry-hamburger" id="tsindry-hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="h4 mb-0">EduPlateforme MG</h1>
+                <div class="d-flex align-items-center">
+                    <span class="me-3">Tongasoa!</span>
+                    <img src="https://via.placeholder.com/40" alt="Sarin'ny mpampiasa" class="rounded-circle">
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="menu-ankavia" id="menu-ankavia">
+        <div class="pt-3 pb-2 text-center">
+            <img src="https://via.placeholder.com/80" alt="Logo" class="rounded-circle mb-2">
+            <h5 class="mb-0">Ny kaontinao</h5>
+        </div>
+        <div class="mt-3">
+            <a href="naoty.html"><i class="fas fa-chart-line"></i> Ireo naoty</a>
+            <a href="fampiasana_miandry.html"><i class="fas fa-tasks"></i> Ireo fampiasana miandry</a>
+            <a href="fandaharam_potoana.html"><i class="fas fa-calendar-alt"></i> Fandaharam-potoana</a>
+            <a href="#" id="sokajy-fianarana">
+                <i class="fas fa-book"></i> Sokajy fianarana
+                <i class="fas fa-chevron-down float-end mt-1" id="chevron-sokajy"></i>
+            </a>
+            <div class="lisitra-sokajy" id="lisitra-sokajy">
+                <a href="sokajy_manokana.html">Matematika</a>
+                <a href="#">Fizika</a>
+                <a href="#">Biôlôjia</a>
+                <a href="#">Historia</a>
+                <a href="#">Français</a>
+                <a href="#">Anglisy</a>
+            </div>
+            <a href="vao2.html"><i class="fas fa-newspaper"></i> Ireo vaovao samihafa</a>
+        </div>
+    </nav>
+    <main class="votoaty" id="votoaty">
+        <div class="container-fluid">
+            <h2><i class="fas fa-calendar-alt me-2"></i>Fandaharam-potoana</h2>
+            <div class="card shadow-sm mt-4">
+                <div class="card-header bg-white d-flex justify-content-between">
+                    <h5 class="mb-0">Fandaharam-potoana herinandro</h5>
+                    <select class="form-select form-select-sm w-auto">
+                        <option>Herinandro 42</option>
+                        <option>Herinandro 41</option>
+                        <option>Herinandro 40</option>
+                    </select>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Andro</th>
+                                    <th>08h-10h</th>
+                                    <th>10h-12h</th>
+                                    <th>12h-14h</th>
+                                    <th>14h-16h</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alatsinainy</td>
+                                    <td>Matematika</td>
+                                    <td>Fizika</td>
+                                    <td rowspan="5" class="text-center align-middle">Sakafo atoandro</td>
+                                    <td>Anglisy</td>
+                                </tr>
+                                <tr>
+                                    <td>Talata</td>
+                                    <td>Biôlôjia</td>
+                                    <td>Français</td>
+                                    <td>Historia</td>
+                                </tr>
+                                <tr>
+                                    <td>Alarobia</td>
+                                    <td>Matematika</td>
+                                    <td>EPS</td>
+                                    <td>Fizika</td>
+                                </tr>
+                                <tr>
+                                    <td>Alakamisy</td>
+                                    <td>Français</td>
+                                    <td>Anglisy</td>
+                                    <td>Biôlôjia</td>
+                                </tr>
+                                <tr>
+                                    <td>Zoma</td>
+                                    <td>Historia</td>
+                                    <td>Matematika</td>
+                                    <td>Fanovana</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="tongotra">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>EduPlateforme MG</h5>
+                    <p>Platforme fianarana malagasy</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Ireo fitsipika mifehy</a>
+                    <a href="#" class="text-white me-3">Tahirin-kevitra</a>
+                    <a href="#" class="text-white">Momba ny fampiasana</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('tsindry-hamburger').addEventListener('click', function() {
+            document.getElementById('menu-ankavia').classList.toggle('miseho');
+        });
+        document.getElementById('sokajy-fianarana').addEventListener('click', function(e) {
+            e.preventDefault();
+            const l = document.getElementById('lisitra-sokajy');
+            l.classList.toggle('miseho');
+            const chevron = document.getElementById('chevron-sokajy');
+            if (l.classList.contains('miseho')) {
+                chevron.classList.remove('fa-chevron-down');
+                chevron.classList.add('fa-chevron-up');
+            } else {
+                chevron.classList.remove('fa-chevron-up');
+                chevron.classList.add('fa-chevron-down');
+            }
+        });
+    </script>
+</body>
+</html>

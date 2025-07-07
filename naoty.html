@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlateforme MG - Ireo naoty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tany-fototra">
+    <header class="lohany">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="tsindry-hamburger" id="tsindry-hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="h4 mb-0">EduPlateforme MG</h1>
+                <div class="d-flex align-items-center">
+                    <span class="me-3">Tongasoa!</span>
+                    <img src="https://via.placeholder.com/40" alt="Sarin'ny mpampiasa" class="rounded-circle">
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="menu-ankavia" id="menu-ankavia">
+        <div class="pt-3 pb-2 text-center">
+            <img src="https://via.placeholder.com/80" alt="Logo" class="rounded-circle mb-2">
+            <h5 class="mb-0">Ny kaontinao</h5>
+        </div>
+        <div class="mt-3">
+            <a href="naoty.html"><i class="fas fa-chart-line"></i> Ireo naoty</a>
+            <a href="fampiasana_miandry.html"><i class="fas fa-tasks"></i> Ireo fampiasana miandry</a>
+            <a href="fandaharam_potoana.html"><i class="fas fa-calendar-alt"></i> Fandaharam-potoana</a>
+            <a href="#" id="sokajy-fianarana">
+                <i class="fas fa-book"></i> Sokajy fianarana
+                <i class="fas fa-chevron-down float-end mt-1" id="chevron-sokajy"></i>
+            </a>
+            <div class="lisitra-sokajy" id="lisitra-sokajy">
+                <a href="sokajy_manokana.html">Matematika</a>
+                <a href="#">Fizika</a>
+                <a href="#">Biôlôjia</a>
+                <a href="#">Historia</a>
+                <a href="#">Français</a>
+                <a href="#">Anglisy</a>
+            </div>
+            <a href="vaovao.html"><i class="fas fa-newspaper"></i> Ireo vaovao samihafa</a>
+        </div>
+    </nav>
+    <main class="votoaty" id="votoaty">
+        <div class="container-fluid">
+            <h2><i class="fas fa-chart-line me-2"></i>Ireo naoty</h2>
+            <div class="boite-vaovao">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="mb-1"><i class="fas fa-bell text-warning me-2"></i>Naoty vaovao!</h5>
+                        <p class="mb-0">Nalaina ny naoty ny fanadinana Matematika</p>
+                    </div>
+                    <span class="badge bg-primary">15/20</span>
+                </div>
+            </div>
+            <div class="card shadow-sm mt-4">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Fitantanana ny naoty</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-naoty">
+                            <thead>
+                                <tr>
+                                    <th>Matière</th>
+                                    <th>Note</th>
+                                    <th>Date</th>
+                                    <th>Coefficient</th>
+                                    <th>Appréciation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Matematika</td>
+                                    <td>15/20</td>
+                                    <td>15/10/2023</td>
+                                    <td>4</td>
+                                    <td>Tsara</td>
+                                </tr>
+                                <tr>
+                                    <td>Fizika</td>
+                                    <td>12/20</td>
+                                    <td>10/10/2023</td>
+                                    <td>3</td>
+                                    <td>Mety</td>
+                                </tr>
+                                <tr>
+                                    <td>Français</td>
+                                    <td>18/20</td>
+                                    <td>12/10/2023</td>
+                                    <td>2</td>
+                                    <td>Tsara be</td>
+                                </tr>
+                                <tr>
+                                    <td>Biôlôjia</td>
+                                    <td>14/20</td>
+                                    <td>08/10/2023</td>
+                                    <td>3</td>
+                                    <td>Tsara</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-end mt-3">
+                        <span class="moyenne">Moyenne générale: 14.8/20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="tongotra">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>EduPlateforme MG</h5>
+                    <p>Platforme fianarana malagasy</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Ireo fitsipika mifehy</a>
+                    <a href="#" class="text-white me-3">Tahirin-kevitra</a>
+                    <a href="#" class="text-white">Momba ny fampiasana</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('tsindry-hamburger').addEventListener('click', function() {
+            document.getElementById('menu-ankavia').classList.toggle('miseho');
+        });
+        document.getElementById('sokajy-fianarana').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('lisitra-sokajy').classList.toggle('miseho');
+            const chevron = document.getElementById('chevron-sokajy');
+            if (document.getElementById('lisitra-sokajy').classList.contains('miseho')) {
+                chevron.classList.remove('fa-chevron-down');
+                chevron.classList.add('fa-chevron-up');
+            } else {
+                chevron.classList.remove('fa-chevron-up');
+                chevron.classList.add('fa-chevron-down');
+            }
+        });
+    </script>
+</body>
+</html>
