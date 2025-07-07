@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanampy vaovao/fampahafantarana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Correction temporaire pour la démo, mettez cela dans style.css pour toutes les pages */
+      .lohany {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1020;
+      }
+      .menu-ankavia {
+        top: 65px; /* hauteur du header */
+        height: calc(100vh - 65px);
+      }
+      .votoaty {
+        padding-top: 85px; /* laisse la place du header */
+      }
+      @media (min-width: 769px) {
+        .votoaty {
+          margin-left: 250px;
+        }
+        .menu-ankavia {
+          transform: none !important;
+        }
+      }
+      @media (max-width: 768px) {
+        .menu-ankavia {
+          position: fixed;
+          left: 0;
+          top: 65px;
+          width: 250px;
+          height: calc(100vh - 65px);
+          z-index: 1050;
+          background: white;
+          box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+          transform: translateX(-100%);
+          transition: transform 0.3s ease;
+        }
+        .menu-ankavia.miseho {
+          transform: translateX(0);
+        }
+        .votoaty {
+          margin-left: 0 !important;
+        }
+      }
+    </style>
+</head>
+<body class="tany-fototra">
+<header class="lohany">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+            <button class="tsindry-hamburger" id="tsindry-hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="h4 mb-0">EduPlateforme MG</h1>
+            <div class="d-flex align-items-center">
+                <span class="me-3">Tongasoa!</span>
+                <img src="https://via.placeholder.com/40" alt="Sarin'ny mpampiasa" class="rounded-circle">
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="menu-ankavia" id="menu-ankavia">
+    <div class="pt-3 pb-2 text-center">
+        <img src="https://via.placeholder.com/80" alt="Logo" class="rounded-circle mb-2">
+        <h5 class="mb-0">Kaonty Admin</h5>
+    </div>
+    <div class="mt-3">
+        <a href="fandrasaina.html"><i class="fas fa-home"></i> Pejy fandraisana</a>
+        <a href="fampidirana_mpianatra.html"><i class="fas fa-user-plus"></i> Fisoratana anarana mpianatra</a>
+        <a href="fampidirana_mpampianatra.html"><i class="fas fa-user-tie"></i> Fisoratana anarana mpampianatra</a>
+        <a href="fampidirana_fandaharana.html"><i class="fas fa-calendar-plus"></i> Hanampy fandaharam-potoana</a>
+        <a href="fampahafantarana.html"><i class="fas fa-info-circle"></i> Hanampy vaovao/fampahafantarana</a>
+        <a href="lisitra_mpampianatra.html"><i class="fas fa-info-circle"></i>Lisitry ny mpampianatra rehetra</a>
+        <a href="lisitra_mpianatra.html"><i class="fas fa-info-circle"></i> Lisitry ny mpianatra</a>
+         <a href="fahatarana_tsy_fahatongavana.html"><i class="fas fa-info-circle"></i> Fahatarana sy tsy fahantongavana</a>
+    </div>
+</nav>
+<main class="votoaty" id="votoaty">
+    <div class="container">
+        <h2><i class="fas fa-info-circle me-2"></i> Hanampy vaovao na fampahafantarana</h2>
+        <form class="row g-3 mt-2">
+            <div class="col-md-12">
+                <label class="form-label">Lohateny</label>
+                <input type="text" class="form-control" placeholder="Lohateny vaovao">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Daty</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Ora</label>
+                <input type="time" class="form-control">
+            </div>
+            <div class="col-md-12">
+                <label class="form-label">Votoaty/Details</label>
+                <textarea class="form-control" rows="3" placeholder="Votoaty na fanazavana"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Mpandefa</label>
+                <input type="text" class="form-control" placeholder="Anarana admin">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Mpandray (kilasy, rehetra...)</label>
+                <input type="text" class="form-control" placeholder="Ex: 3ème A, rehetra...">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Tehirizo</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer class="tongotra">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>EduPlateforme MG</h5>
+                <p>Platforme fianarana malagasy</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-white me-3">Ireo fitsipika mifehy</a>
+                <a href="#" class="text-white me-3">Tahirin-kevitra</a>
+                <a href="#" class="text-white">Momba ny fampiasana</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('tsindry-hamburger').addEventListener('click', function() {
+        document.getElementById('menu-ankavia').classList.toggle('miseho');
+    });
+</script>
+</body>
+</html>
